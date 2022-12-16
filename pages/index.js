@@ -4,9 +4,8 @@ import Layout from 'components/Layout';
 import ResourceHighlight from 'components/ResourceHighlight';
 import NewsLetters from 'components/Newsletters';
 import ResourseList from 'components/ResourceList';
-import Footer from 'components/Footer';
-import styles from 'styles/Home.module.css'
 
+import { resources } from "api/data";
 
 const Home =()=> {
   return (
@@ -17,11 +16,10 @@ const Home =()=> {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Checking</h1>
       <Layout>
-          <ResourceHighlight/>
+          <ResourceHighlight resources={resources}/>
           <NewsLetters/>
-          <ResourseList/>
+          <ResourseList resources={resources}/>
       </Layout>
     </div>
   )
