@@ -29,4 +29,14 @@ export const resources = [
         timeToFinish: 45,
         active: true
     },
+    {
+        id:"4",
+        title: "Content Title 4",
+        description: "Write the description of the content here...",
+        link: "https://link.com/link",
+        image: "http://image.com/",
+        priority: 3,
+        timeToFinish: 45,
+        active: true
+    },
 ]

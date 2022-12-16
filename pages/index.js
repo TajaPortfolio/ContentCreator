@@ -17,7 +17,7 @@ const Home =()=> {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-          <ResourceHighlight resources={resources}/>
+          <ResourceHighlight resources={resources.slice(-1)}/>
           <NewsLetters/>
           <ResourseList resources={resources}/>
       </Layout>
