@@ -27,10 +27,12 @@ const Home =({resources})=> {
 export async function getServerSideProps(){
   const resData = await fetch("http://localhost:3000/api/resources")
   const data = await resData.json();
+  console.log("Server Running");
     return {
       props: {
         resources: data
       }
     }
+    
 }
 export default Home;
