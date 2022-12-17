@@ -24,8 +24,9 @@ const Home =({resources})=> {
   )
 }
 
+//getServerSideProps helps to prevent CORS errors because this is ran server side instead of client side.
 export async function getServerSideProps(){
-  const resData = await fetch("http://localhost:3000/api/resources")
+  const resData = await fetch("http://localhost:3001/api/resources")
   const data = await resData.json();
   console.log("Server Running");
     return {
